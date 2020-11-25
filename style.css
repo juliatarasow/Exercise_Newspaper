@@ -1,0 +1,84 @@
+/* reset css */
+*, *::before, *::after{
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+:root{
+    font-size: 62,5%;
+}
+
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
+
+body{
+    font-family: 'EB Garamond', serif;
+}
+
+/*header*/
+header h1{
+    font-weight: 700;
+    text-align: center;
+    font-size: 3.6rem;
+    margin-top: 30px;
+}
+nav {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    background: white;
+    margin-top: 25px;
+    position: sticky;
+    top:0;
+}
+nav a{
+    padding: 0 20px;
+}
+nav, h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* headers */
+h4{
+    font-weight: bold;
+    font-size: 1rem;
+    color: #262626;
+}
+h2{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* main content */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.teaser {
+    display: flex;
+}
+.box, .big {
+    margin: 10px;
+}
+.thumb{
+    max-height: 250px;
+}
+img{
+    width: 100%;
+    padding-bottom: 15px;
+}
+p {
+    text-align: justify;
+    padding: 15px 0;
+}
+@media screen and (min-width: 601px) and (max-width: 992px){
+    .teaser {
+        width: calc(100vw-10px);
+    }
+    .outer-box {
+        width: 50%;
+    }
+}
